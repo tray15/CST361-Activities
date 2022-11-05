@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:ui="http://java.sun.com/jsf/facelets"
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:h="http://java.sun.com/jsf/html">
+
+<style>
+h1 {
+	text-align: center;
+}
+</style>
+<head>
+<title>Add Music Album</title>
+</head>
+<body>
+	<div>
+		<h:form>
+			<h1>Add Music Album</h1>
+			<p>Title: #{album.title}</p>
+			<p>Artist: #{album.artist}</p>
+			<p>Year: #{album.year}</p>
+			<h:button value="Add Another" outcome="AddAlbumForm.xhtml"></h:button>
+			<h:dataTable value="#{album.tracks}" var="track">
+				<h:column>
+					<f:facet name="header">Track Number</f:facet>
+					#{track.number}
+				</h:column>
+				<h:column>
+					<f:facet name="header">Title</f:facet>
+					#{track.title}
+				</h:column>
+			</h:dataTable>
+		</h:form>
+	</div>
+</body>
+</html>

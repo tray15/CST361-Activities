@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:ui="http://java.sun.com/jsf/facelets"
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:h="http://java.sun.com/jsf/html">
+
+<style>
+h1 {
+	text-align: center;
+}
+</style>
+<head>
+<title>Add Music Album</title>
+</head>
+<body>
+	<h1>Add Music Album</h1>
+	<h:form>
+		<p>Title:<h:inputText id="title" value="#{album.title}" /></p>
+		<h:message for="title" style="color:red"></h:message><br />
+		<p>Artist:<h:inputText id="artist" value="#{album.artist}" /></p>
+		<h:message for="artist" style="color:red"></h:message><br />
+		<p>Year:<h:inputText id="year" minlength="4" value="#{album.year}" /></p>
+		<h:message for="year" style="color:red"></h:message><br />
+		<h:commandButton value="Submit" action="#{albumController.onSubmit(album)}"></h:commandButton>
+		<h:commandButton value="Find" action="#{albumController.onFind(album)}"></h:commandButton>
+	</h:form>
+</body>
+</html>
