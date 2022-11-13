@@ -1,0 +1,16 @@
+[
+{"type":"header","version":"4.9.5","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"music"},
+{"type":"table","name":"track","database":"music","data":
+[
+{"ID":"1","ALBUM_ID":"1","TITLE":"SomeTrackTitle","NUMBER":"1"},
+{"ID":"2","ALBUM_ID":"1","TITLE":"SomeTrackTitle","NUMBER":"2"},
+{"ID":"3","ALBUM_ID":"1","TITLE":"SomeTrackTitle","NUMBER":"3"},
+{"ID":"4","ALBUM_ID":"1","TITLE":"SomeTrackTitle","NUMBER":"4"},
+{"ID":"5","ALBUM_ID":"2","TITLE":"TrackTitle2","NUMBER":"1"},
+{"ID":"6","ALBUM_ID":"2","TITLE":"TrackTitle2","NUMBER":"2"},
+{"ID":"7","ALBUM_ID":"2","TITLE":"TrackTitle2","NUMBER":"3"},
+{"ID":"8","ALBUM_ID":"2","TITLE":"TrackTitle2","NUMBER":"4"}
+]
+}
+]
